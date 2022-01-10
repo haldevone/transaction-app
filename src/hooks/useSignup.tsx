@@ -10,7 +10,7 @@ export const useSignup = () =>{
     const [isPending, setIsPending] = useState(false);
     const { dispatch } = useAuthContext();
 
-    const signup = async (email:any, password:any, displayName:string) => {
+    const signup = async (email:string, password:string, displayName:string) => {
         setError(null);
         setIsPending(true);
 

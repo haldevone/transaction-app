@@ -10,7 +10,7 @@ function useLogin() {
     const [isPending, setIsPending] = useState(false);
     const { dispatch } = useAuthContext();
 
-    const login = async (email : any, password : any) => {
+    const login = async (email : string, password : string) => {
         setError(null);
         setIsPending(true);
 

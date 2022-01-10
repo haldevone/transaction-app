@@ -19,11 +19,11 @@ const firebaseConfig = {
   const auth = getAuth();
   const db = getFirestore();
 
-  function authSignup(email : any, password : any){
+  function authSignup(email : string, password : string){
     return createUserWithEmailAndPassword(auth, email, password);
   }
 
-  function authSignIn(email : any, password : any){
+  function authSignIn(email : string, password : string){
     return signInWithEmailAndPassword(auth, email, password);
   }
 
