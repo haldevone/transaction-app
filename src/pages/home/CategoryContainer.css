@@ -1,0 +1,13 @@
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn-container .btn{
+    margin: 0.2rem;
+}
+
+.btn-container .btn:focus{
+    background: var(--color-btn);
+    color: var(--color-primary);
+}

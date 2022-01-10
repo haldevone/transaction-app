@@ -1,0 +1,22 @@
+
+.chartArea{
+    text-align: center;
+}
+
+.chart{
+ display: flex;
+ justify-content: start;
+
+}
+.chart-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 600px;
+    gap: 30px;
+}
+.chart-list-second{
+    display: flex;
+    
+}
