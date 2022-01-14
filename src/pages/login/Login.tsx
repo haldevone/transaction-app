@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FormEvent } from 'react'
 import './Login.css'
 import { useState } from 'react'
 import useLogin from '../../hooks/useLogin';
@@ -9,7 +9,7 @@ function Login() {
     const [password, setPassword] = useState('');
     const {login, error, isPending} = useLogin();
 
-    const handleSubmit = (e : any) => {
+    const handleSubmit = (e : FormEvent) => {
         e.preventDefault();
         login(email, password);
     }

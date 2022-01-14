@@ -21,7 +21,7 @@ function App() {
           <Route path="/" 
           element={user ? <Home /> : <Navigate to="/login"/>}/>
           <Route path="/chart" 
-          element={user ? <PieChart /> : <Navigate to="/chart"/>}/>
+          element={user ? <PieChart /> : <Navigate to="/login"/>}/>
           <Route path="/login" 
           element={!user ? <Login /> : <Navigate to="/"/>}/>
           <Route path="/signup" 
